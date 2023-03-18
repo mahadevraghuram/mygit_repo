@@ -1,0 +1,69 @@
+•	Working as DevOps Engineer in TCS, Hyderabad. From April 2018 to till date
+•	From August 2000 to December 2017, worked independently for various real estate companies in the real estate sector.
+
+
+BIPO 
+Apr 2018 to Sept 2020
+
+Kredit Bee
+Sept 2020 to till date
+
+
+=====================
+
+
+GIT
+
+
+Explain the branching strategy in GIT…?
+
+In our organization, we have DEV branch, TEST branch, STAGING branch, PROD branch (master, release) & HOTFIX branch Developers create sub-feature branches from DEV branch & create different functionalities code individually on these branches. Later, these feature braches are merged with the DEV branch & the DEV branch code is compiled & built into an artifact. 
+
+This artifact is deployed into the DEV servers where developers perform basic Unit testing. Once this is successful, the entire DEV branch code is merged with the TEST branch and the artifacts are deployed into the QA servers where selenium testers perform functional testing. Once this turns out to be successful, this code is then merged with the STAGING branch & it is deployed into the staging servers where we perform UAT testing & then it is merged with the MASTER/RELEASE branch. 
+
+and then deployed into the live environment. If the customer has any bugs or enhancement requests, we merge the RELEASE branch with the HOTFIX branch where bug fixing is done, tested & merged back into the RELEASE branch. And then we trigger a rolling update operation into the production environment.
+
+===================
+
+Explain the differences between Git clone Git Fetch and Git Pull (or) Explain the Git checkout process…?
+
+There are 3 ways in which we can download code from Git. Git clone, Git Fetch and Git Pull.
+Git Clone is one time operation and this is generally used when we want to download the entire Git repository. This is generally done when all the team members want to download the entire folder structure for the first time. 
+Git Fetch and Git Pull are used when we want to download only the modified data. Git Fetch downloads the modified files and places them on a remote branch. We can move into this remote branch check weather these modifications are acceptable if so, we can merge it in the master branch. 
+In the case of Git Pull we will download only the modified data and that will be merged automatically with the existence branch structure. 
+
+Explain the differences between Git merge, Git Rebase and Git cherry Picking…?
+
+In the case of Git merge the commits which are present on a branch will move or merge into the parent branch based on the time stamp of the commit history. 
+Git Rebasing is also called as fast forward merge. Here the commits coming from the branch will be projected as the top most commits on the parent branch. This is generally used when the developers want to project the code coming from the branch as the top most commits. 
+Git cherry picking is used when we want to selectuly pick up only few commits from a branch and move them into the parent branch. 
+
+Can you Git stash …?
+
+Stash is a section of Git into which we can temporarily send files and as long as files are present within the stash section further commands of Git will not be able to accesses them. This is generally used when there is some unfinished functionality on which the developers want to work on a later point of time. And for now, they want to work on a new functionality then the old functionality code is sent into the stash area.
+
+Whish remote repository of Git you have do you use…?
+(or) Where you upload your code…?
+
+We are using Git hub enterprise edition for uploading the code. Developers use it for checking in the development code similarly testers upload the selenium scripts into this Git hub and as Devops engineers we upload our ansible playbooks, docker compose files, Jenkins files, Kubernetes definition files etc., into the same Git hub. 
+
+What is the purpose .git ignore (or) how can we hide private files…? So that Git cannot access them.
+
+We can create special configuration file called as .git ignore. And within this .git ignore we can store our all private files information. Any file whose name is mentioned in .git ignore will not be accessed by git.
+
+Can you tell what are the types of versions controlling which are available…?
+
+We have two types of versions controlling systems called as centralized version controlling and distributed version controlling.
+
+In centralized version controlling we have remote repository into which entire code is uploaded. And version controlling only on that remote server. 
+In the case of distributed version controlling initially the code is pushed into the local repository where version controlling happens at the level of one individual team member. And later it is uploaded into the remote repository where version controlling happens at the level of entire team. The classical example of centrolized version controlling is SVN . This SVN software is installed on the remote server and on individual team members mission we install the client software called tortoise SVN. With the help of this tortoise SVN we can upload into the remote SVN server. In the case of Git on the client mission.
+
+In distributed version controlling for example Git remote repository set up on a server and on the client mission we install git bash or git gui through we perform upload and download operations.
+
+
+
+
+
+
+
+
