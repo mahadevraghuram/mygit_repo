@@ -1,0 +1,7 @@
+git plugin
+maven integration plugin
+deploy to container plugin
+copy artefact plugin
+pipeline plugin
+role-based authorisation strategy plugin
+sonar plugin
